@@ -13,7 +13,7 @@ router.get("/keys", async(req: Request, res: Response) => {
 })
 
 router.post("/sign/:identifier", async(req: Request, res: Response) => {
-    const response = await APIs.signData(req.params.identifier, req.body.data)
+    const response = await APIs.signData(req.params.identifier, req.body.signingRoot)
     res.send(response)
 })
 

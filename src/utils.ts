@@ -1,5 +1,5 @@
 export function hexToBytes(hex: string): Uint8Array {
-    console.log(hex)
+    // console.log(hex)
     if (hex.startsWith("0x")) {
       hex = hex.slice(2);
     }
